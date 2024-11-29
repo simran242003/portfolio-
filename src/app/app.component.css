@@ -1,0 +1,77 @@
+/* 
+label{
+    color:white;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+ 
+  input[type="checkbox"]:checked {
+    background-color: #333;
+  }
+  
+  
+  label {
+    margin-left: 5px;
+  }
+  
+  
+  label {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+   */
+
+   /* Dark Mode Styles */
+body {
+  background-color: #121212;
+  color: white;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Checkbox Styling */
+label {
+  color: white;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #333;
+}
+
+label {
+  margin-left: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.light-mode label {
+  color: black;
+}

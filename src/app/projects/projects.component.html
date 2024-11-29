@@ -1,0 +1,41 @@
+<div id="portfolio" [ngClass]="{'light-mode': lightMode}">
+  <div class="container" [ngClass]="{'light-mode': lightMode}">
+    <h1 class="sub-title">My Work</h1>
+
+    <!-- Input field for filtering projects -->
+    <mat-form-field>
+      <mat-label>Filter Projects</mat-label>
+      <input matInput (input)="filterProjects($event)" placeholder="Enter project title">
+    </mat-form-field>
+
+    <div class="work-list">
+      <div class="work" *ngFor="let project of filteredProjects"
+        [ngClass]="{'filtered-project': true, 'light-mode': lightMode}">
+        <mat-card>
+          <img mat-card-image [src]="project.image" alt="{{ project.title }}">
+          <mat-card-header>
+            <mat-card-title>{{ project.id }}.{{ project.title }}</mat-card-title>
+            <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ project.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <a mat-button color="primary" [href]="project.link" target="_blank">
+              <span class="material-icons">open_in_new</span>
+            </a>
+            <!-- <button mat-button color="primary" (click)="goToProjectDetails(project.id)">
+              <mat-icon>info</mat-icon>
+              View Details
+            </button> -->
+            <button mat-icon-button (click)="like(project.id)"
+              [ngClass]="{'liked': isProjectLiked(project.id), 'unliked': !isProjectLiked(project.id)}"
+              class="iconsize">
+              <mat-icon>favorite</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>

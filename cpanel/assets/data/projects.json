@@ -1,0 +1,28 @@
+{
+  "projectsData": [
+    {
+      "id": 1,
+      "title": "Tic Tac Toe",
+      "subtitle": "A simple game",
+      "description": "This web design is for Tic Tac Toe Game. It allows two players at a time to play the game within one minute.",
+      "image": "./assets/images/work1.png",
+      "link": "https://admirable-sopapillas-9a716b.netlify.app/"
+    },
+    {
+      "id": 2,
+      "title": "Age Calculator",
+      "subtitle": "Calculate your age",
+      "description": "This is a basic web design that allows users to input their date of birth and get their age.",
+      "image": "./assets/images/work2.jpg",
+      "link": "https://loquacious-lily-a867ed.netlify.app"
+    },
+    {
+      "id": 3,
+      "title": "Pizza Shop",
+      "subtitle": "Order Pizza",
+      "description": "This is a Spring Boot project that allows users to order pizza from a pizza shop after successfully signing in or signing up.",
+      "image": "./assets/images/work3.jpg",
+      "link": "https://github.com/simran242003/PizzaShop"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<div id="header" [ngClass]="{'light-mode': lightMode}">
+    <div class="container">
+      <nav>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        <img src="./assets/images/logo.png
+        
+        
+        " class="logo">
+        <ul id="sidemenu" [ngClass]="{'light-mode': lightMode}">
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Software Development and Network Engineering</p>
+        <h1>Hello, I am <span>{{name}}</span>
+          <br> from Sheridan College
+        </h1>
+      </div>
+    </div>
+  </div>
+  

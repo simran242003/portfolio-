@@ -1,0 +1,43 @@
+    <!--Contact------->
+   
+   <link href="https://fonts.google.com/icons">
+   
+    <div id="contact" [ngClass]="{'light-mode': lightMode}">
+
+        <div class="container" [ngClass]="{'light-mode': lightMode}">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <!--<p><i class="fa-solid fa-paper-plane"></i>simran33@sheridancollege.ca</p>  -->
+                    <p><span class="material-icons">mail</span>simran33@sheridancollege.ca</p>
+
+                   <p><span class="material-icons">call</span>6478879523</p>
+                    <!--<p><i class="fa-solid fa-phone"></i>6478879523</p>  -->
+                    <div class="social-icons">
+                        
+                    <!-- <a href="https://www.linkedin.com/in/simran-kaur-724660289/"><i class="fab fa-linkedin"></i></a> -->
+                        <a [href]="socials.linkedin">Linkedin<i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="https://github.com/simran242003/" class="fa-brands fa-github"><i class="fab fa-github"></i></a> -->
+                     <a [href]="socials.github">Github</a>
+                </div>
+                    <a href="simresume2.docx - Shortcut.lnk" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit </button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+

@@ -1,0 +1,70 @@
+<!--About section-->
+<div id="about" [ngClass]="{'light-mode': lightMode}">
+    <div class="container" [ngClass]="{'light-mode': lightMode}">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./assets/images/user.jpg" alt="about me">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Software Development co-op student skilled in programming and developing avid learner who adapts
+                    to new situations and learns new concepts efficiently. Currently learning C, C#, and Angular
+                    technologies
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" [ngClass]="{'active-link': activeTab === 'skills'}" (click)="setActiveTab('skills')">Skills</p>
+                    <p class="tab-links" [ngClass]="{'active-link': activeTab === 'education'}" (click)="setActiveTab('education')">Education</p>
+                    <p class="tab-links" [ngClass]="{'active-link': activeTab === 'experience'}" (click)="setActiveTab('experience')">Experience</p>
+                    <p class="tab-links" [ngClass]="{'active-link': activeTab === 'volunteer'}" (click)="setActiveTab('volunteer')">Volunteer Work</p>
+                </div>
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'skills'}" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>HTML, CSS, Javascript. Java</li>
+                        <li><span>Framework Proficiency</span><br>Springboot, Angular</li>
+                        <li><span>Technical Skills</span><br>Inventory Management ,IT Preventative Maintenance,
+                            Software Troubleshooting, Ticketing System(Service-Now Support)
+                        </li>
+                        <li><span>Networking Concepts</span><br>TCP/IP, DNS, Cisco Packet Tracer with Security and
+                            privacy</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'education'}" id="education">
+                    <ul>
+                        <li><span>Advanced Diploma</span><br>Software Developemnt and Network Enginnering</li>
+                        <li><span></span><br>Anticipated-2025</li>
+                        <li><span></span><br>GPA: 3.8</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'experience'}" id="experience">
+                    <ul>
+                        <li><span>IT Technologist-Sheridan College</span><br>• Provided frontline technical support
+                            to clients utilizing mobile labs, smart classrooms, and computer labs</li>
+                        <li>• Executed IT preventative maintenance activities in classrooms, labs, and learning
+                            commons, ensuring optimal functionality of IT resources</li>
+                        <li>• Conducted IT asset inventory management to maintain accurate records of equipment and
+                            resources.</li>
+                        <li>• Delivered end-user support via inbound phone calls, chat, and email inquiries,
+                            addressing issues related to desktop and laptop computers, operating systems, telephones
+                            and PC applications software</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" [ngClass]="{'active-tab': activeTab === 'volunteer'}" id="volunteer">
+                    <ul>
+                        <li><span>Double Crew Member -Sheridan College</span></li>
+                        <li>• Collaborated in organizing and executing engaging orientation activities, fostering a
+                            sense of community among incoming students.</li>
+                        <li>• Demonstrated effective teamwork and communication skills as a vital member of the
+                            Catering team, ensuring seamless event operations.
+                        </li>
+                        <li>•Provided invaluable support by guiding students in locating their classes, contributing
+                            to a positive onboarding experience.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
